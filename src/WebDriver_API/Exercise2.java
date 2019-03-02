@@ -19,6 +19,7 @@ public class Exercise2 {
 		System.setProperty("webdriver.chrome.driver", ".\\driver\\chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
+		//
 	}
 	@Test
 	public void TC_01() {
