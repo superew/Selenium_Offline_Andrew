@@ -21,71 +21,71 @@ public class Exercise1 {
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 	}
-//	@Test
-//	public void TC_01_loginEmpty() {
-//		//Open link
-//		driver.get("http://live.guru99.com/");
-//		
-//		//Click on Account link
-//		driver.findElement(By.xpath("//a[contains(@class,'skip-account')]")).click();
-//		
-//		//Click on My Account to navigate to Login page
-//		driver.findElement(By.xpath("//div[@id='header-account']//a[contains(@title,'My Account')]")).click();
-//		
-//		//Click on button Login
-//		driver.findElement(By.xpath("//button[@title='Login']")).click();
-//		
-//		//Get error texts
-//		String errorText = driver.findElement(By.xpath("//div[@class='validation-advice']")).getText();
-//		assertEquals(errorText, "This is a required field.");
-//		
-//	}
-//	
-//	@Test
-//	public void TC_02_loginInvalidEmail() {
-//		//Open link
-//		driver.get("http://live.guru99.com/");
-//				
-//		//Click on Account link
-//		driver.findElement(By.xpath("//a[contains(@class,'skip-account')]")).click();
-//				
-//		//Click on My Account to navigate to Login page
-//		driver.findElement(By.xpath("//div[@id='header-account']//a[contains(@title,'My Account')]")).click();
-//		
-//		//Input Invalid Email
-//		driver.findElement(By.xpath("//input[@id='email']")).sendKeys("123434234@12312.123123");
-//		
-//		//Click on button Login
-//		driver.findElement(By.xpath("//button[@title='Login']")).click();
-//		
-//		String errorText = driver.findElement(By.xpath("//div[contains(@id,'validate-email')]")).getText();
-//		assertEquals(errorText, "Please enter a valid email address. For example johndoe@domain.com.");
-//	}
-//	
-//	@Test
-//	public void TC_03_loginIncorrectPass() {
-//		//Open link
-//		driver.get("http://live.guru99.com/");
-//						
-//		//Click on Account link
-//		driver.findElement(By.xpath("//a[contains(@class,'skip-account')]")).click();
-//						
-//		//Click on My Account to navigate to Login page
-//		driver.findElement(By.xpath("//div[@id='header-account']//a[contains(@title,'My Account')]")).click();
-//		
-//		//Input Email
-//		driver.findElement(By.xpath("//input[@id='email']")).sendKeys("automation@gmail.com");
-//		
-//		//Input incorrect Pass
-//		driver.findElement(By.xpath("//input[@id='pass']")).sendKeys("123");
-//		
-//		//Click on button Login
-//		driver.findElement(By.xpath("//button[@title='Login']")).click();
-//		
-//		//Verify text
-//		String errorText = driver.findElement(By.xpath("//div[contains(@id,'validate-password')]")).getText();
-//		assertEquals("Please enter 6 or more characters without leading or trailing spaces.", errorText);
-//	}
+	@Test
+	public void TC_01_loginEmpty() {
+		//Open link
+		driver.get("http://live.guru99.com/");
+		
+		//Click on Account link
+		driver.findElement(By.xpath("//a[contains(@class,'skip-account')]")).click();
+		
+		//Click on My Account to navigate to Login page
+		driver.findElement(By.xpath("//div[@id='header-account']//a[contains(@title,'My Account')]")).click();
+		
+		//Click on button Login
+		driver.findElement(By.xpath("//button[@title='Login']")).click();
+		
+		//Get error texts
+		String errorText = driver.findElement(By.xpath("//div[@class='validation-advice']")).getText();
+		assertEquals(errorText, "This is a required field.");
+		
+	}
+	
+	@Test
+	public void TC_02_loginInvalidEmail() {
+		//Open link
+		driver.get("http://live.guru99.com/");
+				
+		//Click on Account link
+		driver.findElement(By.xpath("//a[contains(@class,'skip-account')]")).click();
+				
+		//Click on My Account to navigate to Login page
+		driver.findElement(By.xpath("//div[@id='header-account']//a[contains(@title,'My Account')]")).click();
+		
+		//Input Invalid Email
+		driver.findElement(By.xpath("//input[@id='email']")).sendKeys("123434234@12312.123123");
+		
+		//Click on button Login
+		driver.findElement(By.xpath("//button[@title='Login']")).click();
+		
+		String errorText = driver.findElement(By.xpath("//div[contains(@id,'validate-email')]")).getText();
+		assertEquals(errorText, "Please enter a valid email address. For example johndoe@domain.com.");
+	}
+	
+	@Test
+	public void TC_03_loginIncorrectPass() {
+		//Open link
+		driver.get("http://live.guru99.com/");
+						
+		//Click on Account link
+		driver.findElement(By.xpath("//a[contains(@class,'skip-account')]")).click();
+						
+		//Click on My Account to navigate to Login page
+		driver.findElement(By.xpath("//div[@id='header-account']//a[contains(@title,'My Account')]")).click();
+		
+		//Input Email
+		driver.findElement(By.xpath("//input[@id='email']")).sendKeys("automation@gmail.com");
+		
+		//Input incorrect Pass
+		driver.findElement(By.xpath("//input[@id='pass']")).sendKeys("123");
+		
+		//Click on button Login
+		driver.findElement(By.xpath("//button[@title='Login']")).click();
+		
+		//Verify text
+		String errorText = driver.findElement(By.xpath("//div[contains(@id,'validate-password')]")).getText();
+		assertEquals("Please enter 6 or more characters without leading or trailing spaces.", errorText);
+	}
 	
 	
 	//Create random email

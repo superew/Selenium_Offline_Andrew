@@ -53,8 +53,6 @@ public class Exercise2 {
 		
 		//Verify Radio is selected
 		Assert.assertTrue(element2.isSelected());
-		
-		Thread.sleep(2000);
 				
 		//Step 3: Verify Checkbox 3
 		WebElement element3 = driver.findElement(By.xpath("//input[@value='checkbox3']"));
@@ -69,8 +67,6 @@ public class Exercise2 {
 		
 		//Verify Radio is selected
 		Assert.assertTrue(element3.isSelected());
-		
-		Thread.sleep(2000);
 	}
 	
 	@Test
@@ -91,18 +87,12 @@ public class Exercise2 {
 		year.selectByVisibleText("2019");
 		String selectYear = year.getFirstSelectedOption().getText();
 		
-		Thread.sleep(3000);
-		
 		//Step 3: Verify Selected option
 		Assert.assertEquals("14", selectDay);
 		Assert.assertEquals("Tháng 2", selectMonth);
 		Assert.assertEquals("2019", selectYear);
 		
-		Thread.sleep(3000);
-		
 		System.out.println("Selected: " + selectDay + " " + selectMonth + " " + selectYear);
-		
-		Thread.sleep(3000);
 		
 	}
 	
