@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="12578" started-at="2019-03-02T07:45:17Z" finished-at="2019-03-02T07:45:29Z">
+  <suite name="Default suite" duration-ms="20472" started-at="2019-03-03T09:32:03Z" finished-at="2019-03-03T09:32:23Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="12578" started-at="2019-03-02T07:45:17Z" finished-at="2019-03-02T07:45:29Z">
-      <class name="WebDriver_API.Exercise1">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:WebDriver_API.Exercise1@5afa04c]" name="beforeClass" is-config="true" duration-ms="4536" started-at="2019-03-02T14:45:17Z" finished-at="2019-03-02T14:45:21Z">
+    <test name="Default test" duration-ms="20472" started-at="2019-03-03T09:32:03Z" finished-at="2019-03-03T09:32:23Z">
+      <class name="WebDriver_API.iFrame_Window">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:WebDriver_API.iFrame_Window@5afa04c]" name="beforeClass" is-config="true" duration-ms="6437" started-at="2019-03-03T16:32:03Z" finished-at="2019-03-03T16:32:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="TC_04_createNewAccount()[pri:0, instance:WebDriver_API.Exercise1@5afa04c]" name="TC_04_createNewAccount" duration-ms="8040" started-at="2019-03-02T14:45:21Z" finished-at="2019-03-02T14:45:29Z">
+        <test-method status="PASS" signature="TC_04()[pri:0, instance:WebDriver_API.iFrame_Window@5afa04c]" name="TC_04" duration-ms="14018" started-at="2019-03-03T16:32:09Z" finished-at="2019-03-03T16:32:23Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_04_createNewAccount -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:WebDriver_API.Exercise1@5afa04c]" name="afterClass" is-config="true" duration-ms="0" started-at="2019-03-02T14:45:29Z" finished-at="2019-03-02T14:45:29Z">
+        </test-method> <!-- TC_04 -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:WebDriver_API.iFrame_Window@5afa04c]" name="afterClass" is-config="true" duration-ms="0" started-at="2019-03-03T16:32:23Z" finished-at="2019-03-03T16:32:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- WebDriver_API.Exercise1 -->
+      </class> <!-- WebDriver_API.iFrame_Window -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

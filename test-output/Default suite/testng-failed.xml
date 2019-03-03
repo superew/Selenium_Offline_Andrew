@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="WebDriver_API.Exercise1">
+      <class name="WebDriver_API.iFrame_Window">
         <methods>
-          <include name="TC_04_createNewAccount"/>
           <include name="afterClass"/>
+          <include name="TC_04"/>
           <include name="beforeClass"/>
         </methods>
-      </class> <!-- WebDriver_API.Exercise1 -->
+      </class> <!-- WebDriver_API.iFrame_Window -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
