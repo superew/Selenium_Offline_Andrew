@@ -6,13 +6,14 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-public class Exercise2 {
+import common.commonFunction;
+
+public class Exercise2 extends commonFunction{
 	WebDriver driver;
 	@BeforeClass
 	public void beforeClass(){
@@ -20,10 +21,17 @@ public class Exercise2 {
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 	}
-	@Test
+	
+	@AfterClass
+	public void afterClass() {
+		driver.quit();
+	}
+	
+//	@Test
 	public void TC_01() {
 		//Open link
-		driver.get("https://daominhdam.github.io/basic-form/");
+//		driver.get("https://daominhdam.github.io/basic-form/");
+		openUrl(driver, "https://daominhdam.github.io/basic-form/");
 		
 		//Verify password field is disable
 		WebElement element = driver.findElement(By.xpath("//input[@id='password']"));
@@ -34,10 +42,11 @@ public class Exercise2 {
 
 	}
 	
-	@Test
+//	@Test
 	public void TC_02() throws Exception {
 		//Step 1: Open link
-		driver.get("http://demo.guru99.com/test/radio.html");
+//		driver.get("http://demo.guru99.com/test/radio.html");
+		openUrl(driver, "http://demo.guru99.com/test/radio.html");
 		
 		//Step 2: Verify Radio Option1
 		WebElement element2 = driver.findElement(By.xpath("//input[@value='Option 1']"));
@@ -71,20 +80,30 @@ public class Exercise2 {
 	@Test
 	public void TC_03() throws Exception {
 		//Step 1: Open link
-		driver.get("https://www.facebook.com/");
+//		driver.get("https://www.facebook.com/");
+		openUrl(driver, "https://www.facebook.com/");
 		
 		//Step 2: Select on Combobox
-		Select day = new Select(driver.findElement(By.xpath("//*[@id='day']")));
-		day.selectByVisibleText("14");
-		String selectDay = day.getFirstSelectedOption().getText();
+//		Select day = new Select(driver.findElement(By.xpath("//*[@id='day']")));
+//		day.selectByVisibleText("14");
 		
-		Select month = new Select(driver.findElement(By.xpath("//*[@id='month']")));
-		month.selectByValue("2");
-		String selectMonth = month.getFirstSelectedOption().getText();
+		selectComboboxByVisibleText(driver, "//*[@id='day']", "14");
 		
-		Select year = new Select(driver.findElement(By.xpath("//*[@id='year']")));
-		year.selectByVisibleText("2019");
-		String selectYear = year.getFirstSelectedOption().getText();
+//		String selectDay = day.getFirstSelectedOption().getText();
+		String selectDay = getTextComboboxSelected(driver, "//*[@id='day']");
+		
+//		Select month = new Select(driver.findElement(By.xpath("//*[@id='month']")));
+//		month.selectByValue("2");
+		selectComboboxByValue(driver, "//*[@id='month']", "2");
+		
+//		String selectMonth = month.getFirstSelectedOption().getText();
+		String selectMonth = getTextComboboxSelected(driver, "//*[@id='month']");
+		
+//		Select year = new Select(driver.findElement(By.xpath("//*[@id='year']")));
+//		year.selectByVisibleText("2019");
+		selectComboboxByValue(driver, "//*[@id='year']", "2019");
+//		String selectYear = year.getFirstSelectedOption().getText();
+		String selectYear = getTextComboboxSelected(driver, "//*[@id='year']");
 		
 		//Step 3: Verify Selected option
 		Assert.assertEquals("14", selectDay);
@@ -93,10 +112,5 @@ public class Exercise2 {
 		
 		System.out.println("Selected: " + selectDay + " " + selectMonth + " " + selectYear);
 		
-	}
-	
-	@AfterClass
-	public void afterClass() {
-		driver.quit();
 	}
 }

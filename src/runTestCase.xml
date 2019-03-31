@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="tc login" parallel="false">
+  <test name="Test login">
+      <parameter name="username1" value=""/>
+      <parameter name="password1" value=""/>
+      <parameter name="username2" value="123434234@12312.123123"/>
+      <parameter name="password2" value=""/>
+      <parameter name="username3" value="abcabc"/>
+      <parameter name="password3" value="abcabc"/>
+    <classes>
+      <class name="testNG.ex_group"/>
+    </classes>
+    
+  </test>
+</suite>

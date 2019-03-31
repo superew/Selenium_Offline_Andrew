@@ -151,19 +151,7 @@ public class UserInteraction {
 //		assertEquals(getText, "Dropped!");
 //	}
 //	
-//	@Test
-//	public void TC_ZingPay_exercise() {
-//		//Open link
-//		driver.get("https://pay.zing.vn/wplogin/mobile/jxm");
-//		
-//		//Login
-//		driver.findElement(By.xpath("//input[@id='u']")).sendKeys("giinboo2");
-//		driver.findElement(By.xpath("//input[@id='p']")).sendKeys("Aa123456!");
-//		driver.findElement(By.xpath("//*[@id='login_submit_btn']")).click();
-//		
-//		driver.findElement(By.xpath("//label[contains(text(),'Cụm máy chủ')]/following-sibling::div/button")).click();
-//		
-//	}
+
 	
 	@Test
 	public void TC_07_Extent() {
