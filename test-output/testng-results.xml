@@ -1,25 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="12802" started-at="2019-03-09T06:56:14Z" finished-at="2019-03-09T06:56:27Z">
+  <suite name="Default suite" duration-ms="28524" started-at="2019-06-15T09:32:07Z" finished-at="2019-06-15T09:32:36Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="12802" started-at="2019-03-09T06:56:14Z" finished-at="2019-03-09T06:56:27Z">
-      <class name="WebDriver_API.UserInteraction">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:WebDriver_API.UserInteraction@5afa04c]" name="beforeClass" is-config="true" duration-ms="6192" started-at="2019-03-09T13:56:14Z" finished-at="2019-03-09T13:56:20Z">
+    <test name="Default test" duration-ms="28524" started-at="2019-06-15T09:32:07Z" finished-at="2019-06-15T09:32:36Z">
+      <class name="testNG.TestNG_DataProvidersWithExcel">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:testNG.TestNG_DataProvidersWithExcel@5d5eef3d]" name="beforeClass" is-config="true" duration-ms="13811" started-at="2019-06-15T16:32:07Z" finished-at="2019-06-15T16:32:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="TC_07_Extent()[pri:0, instance:WebDriver_API.UserInteraction@5afa04c]" name="TC_07_Extent" duration-ms="6594" started-at="2019-03-09T13:56:20Z" finished-at="2019-03-09T13:56:27Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:testNG.TestNG_DataProvidersWithExcel@5d5eef3d]" name="beforeMethod" is-config="true" duration-ms="15" started-at="2019-06-15T16:32:22Z" finished-at="2019-06-15T16:32:22Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_07_Extent -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:WebDriver_API.UserInteraction@5afa04c]" name="afterClass" is-config="true" duration-ms="0" started-at="2019-03-09T13:56:27Z" finished-at="2019-03-09T13:56:27Z">
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="integrationTest(java.util.Map)[pri:0, instance:testNG.TestNG_DataProvidersWithExcel@5d5eef3d]" name="integrationTest" duration-ms="4302" started-at="2019-06-15T16:32:22Z" data-provider="data" finished-at="2019-06-15T16:32:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Firstname=Vu, Email=nguyen@gmail.com, Surname=Nguyen, Password=1234567}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- integrationTest -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:testNG.TestNG_DataProvidersWithExcel@5d5eef3d]" name="beforeMethod" is-config="true" duration-ms="19" started-at="2019-06-15T16:32:26Z" finished-at="2019-06-15T16:32:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="integrationTest(java.util.Map)[pri:0, instance:testNG.TestNG_DataProvidersWithExcel@5d5eef3d]" name="integrationTest" duration-ms="4391" started-at="2019-06-15T16:32:26Z" data-provider="data" finished-at="2019-06-15T16:32:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Firstname=Vu1, Email=nguyen1@gmail.com, Surname=Nguyen1, Password=12345678}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- integrationTest -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:testNG.TestNG_DataProvidersWithExcel@5d5eef3d]" name="beforeMethod" is-config="true" duration-ms="17" started-at="2019-06-15T16:32:30Z" finished-at="2019-06-15T16:32:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="integrationTest(java.util.Map)[pri:0, instance:testNG.TestNG_DataProvidersWithExcel@5d5eef3d]" name="integrationTest" duration-ms="3947" started-at="2019-06-15T16:32:30Z" data-provider="data" finished-at="2019-06-15T16:32:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Firstname=Vu2, Email=nguyen2@gmail.com, Surname=Nguyen2, Password=123456789}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- integrationTest -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:testNG.TestNG_DataProvidersWithExcel@5d5eef3d]" name="afterClass" is-config="true" duration-ms="1059" started-at="2019-06-15T16:32:34Z" finished-at="2019-06-15T16:32:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- WebDriver_API.UserInteraction -->
+      </class> <!-- testNG.TestNG_DataProvidersWithExcel -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
